@@ -84,6 +84,3 @@ body {
     cursor: pointer;
   }
 
-  .todo-item button:hover {
-    opacity: 0.9;
-  }
