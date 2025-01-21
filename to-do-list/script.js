@@ -12,11 +12,6 @@ function addTodo() {
     const listItem = document.createElement('li');
     listItem.className = 'todo-item';
 
-    const taskInput = document.createElement('input');
-    taskInput.type = 'text';
-    taskInput.value = todoText;
-    taskInput.readOnly = true;
-
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
@@ -24,7 +19,6 @@ function addTodo() {
       list.removeChild(listItem);
     };
 
-    listItem.appendChild(taskInput);
     listItem.appendChild(deleteButton);
     list.appendChild(listItem);
     input.value = '';
